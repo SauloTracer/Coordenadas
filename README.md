@@ -1,8 +1,13 @@
+Considerações
+
 Encapsulei todas as propriedades com o intuito de realizar a validação das mesmas dentro do "set" mas não enxerguei na descrição do problema nenhuma validação necessária.
 
 Nos testes unitários, utilizei a função AreEquals, porém, como a mesma considera objetos como diferentes mesmo eles tendo todas as suas propriedades iguais (===), e para evitar ter de comparar propriedade por propriedade, sobrescreví o método ToString colocando as informações pertinentes ao caso de teste na saída do mesmo e o utilizei como parâmetro de comparação.
 
+Pensei em utilizar o método "ShouldBeEquivalentTo" disponível no pacote NuGet "FluentAssertions" mas considerei mais interessante não utilizar fontes externas.
 
+
+Descrição do problema:
 
 Assuma um plano cartesiano de coordenadas X x Y. 
 Assumindo uma posição original (x,y), a aplicação irá receber vetores de coordenadas na seguinte forma: 
