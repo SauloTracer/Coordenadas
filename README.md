@@ -1,6 +1,6 @@
 <b>Considerações</b>
 <br/><br/>
-Encapsulei todas as propriedades com o intuito de controlar o acesso às mesmas e realizar a validação das mesmas dentro do "set" mas não enxerguei na descrição do problema nenhuma validação necessária.
+Encapsulei todas as propriedades com o intuito de controlar o acesso e realizar a validação das mesmas dentro do "set" mas não enxerguei na descrição do problema nenhuma validação necessária.
 
 Nos testes unitários, utilizei a função AreEquals, porém, como a mesma considera objetos como diferentes mesmo eles tendo todas as suas propriedades iguais (===), e para evitar ter de comparar propriedade por propriedade, sobrescreví o método ToString colocando as informações pertinentes ao caso de teste na saída do mesmo e o utilizei como parâmetro de comparação.
 
